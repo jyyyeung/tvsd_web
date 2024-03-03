@@ -279,3 +279,5 @@ tvsd_web/media/
 .env
 .envs/*
 !.envs/.local/
+
+.trunk

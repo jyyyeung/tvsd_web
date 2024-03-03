@@ -18,8 +18,8 @@ services:
     volumes:
       - .:/app:z
     env_file:
-      - ./.envs/.local/.django
-      - ./.envs/.local/.postgres
+      - ./.envs/.local/.django.env
+      - ./.envs/.local/.postgres.env
     ports:
       - "8000:8000"
     command: /start
@@ -34,7 +34,7 @@ services:
       - tvsd_web_local_postgres_data:/var/lib/postgresql/data
       - tvsd_web_local_postgres_data_backups:/backups
     env_file:
-      - ./.envs/.local/.postgres
+      - ./.envs/.local/.postgres.env
 
   docs:
     image: tvsd_web_local_docs
@@ -43,7 +43,7 @@ services:
       context: .
       dockerfile: ./compose/local/docs/Dockerfile
     env_file:
-      - ./.envs/.local/.django
+      - ./.envs/.local/.django.env
     volumes:
       - ./docs:/docs:z
       - ./config:/app/config:z
