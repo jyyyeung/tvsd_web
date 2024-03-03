@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 compress_enabled() {
-python << END
+	python <<END
 import sys
 
 from environ import Env
@@ -15,10 +15,9 @@ else:
 END
 }
 
-if compress_enabled
-then
-  python manage.py compress
+if compress_enabled; then
+	poetry run python manage.py compress
 fi
 
-python manage.py collectstatic --noinput
-python manage.py compilemessages -i site-packages
+poetry run python manage.py collectstatic --noinput
+poetry run python manage.py compilemessages -i site-packages
