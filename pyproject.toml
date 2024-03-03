@@ -115,12 +115,16 @@ tag_format = "$version"
 version_scheme = "semver"
 version_provider = "poetry"
 update_changelog_on_bump = true
+# We recommend setting major_version_zero = true in your configuration file while a project is in its initial development. Remove that configuration using a breaking-change commit to bump your project’s major version to v1.0.0 once your project has reached maturity.
 major_version_zero = true
 version_files = [
   "tvsd_web/__init__.py:__version__",
-  "src/__version__.py",
+  "vue_frontend/src/package.json:version",
   "pyproject.toml:version",
 ]
+changelog_format = "markdown"
+annotated_tag = true
+changelog_incremental = true
 
 [tool.semantic_release]
 version_variable = [
