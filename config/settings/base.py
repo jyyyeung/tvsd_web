@@ -1,6 +1,7 @@
 """
 Base settings to build other settings files upon.
 """
+
 from pathlib import Path
 
 import environ
@@ -343,9 +344,9 @@ SPECTACULAR_SETTINGS = {
 # Vue
 # -------------------------------------------------------------------------------
 VUE_FRONTEND_USE_DEV_SERVER = DEBUG
-VUE_FRONTEND_DEV_SERVER_URL = 'http://localhost:5173'
-VUE_FRONTEND_DEV_SERVER_PATH = 'src/'
-VUE_FRONTEND_STATIC_DIR = 'vue'
+VUE_FRONTEND_DEV_SERVER_URL = "http://localhost:5173"
+VUE_FRONTEND_DEV_SERVER_PATH = "src/"
+VUE_FRONTEND_STATIC_DIR = "vue"
 VUE_FRONTEND_USE_TYPESCRIPT = False
 # Your stuff...
 # ------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 volumes:
   tvsd_web_local_postgres_data: {}
@@ -21,7 +21,7 @@ services:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
     ports:
-      - '8000:8000'
+      - "8000:8000"
     command: /start
 
   postgres:
@@ -50,7 +50,7 @@ services:
       - ./tvsd_web:/app/tvsd_web:z
       - ./rewards:/app/rewards:z
     ports:
-      - '9000:9000'
+      - "9000:9000"
     command: /start-docs
 
   mailpit:
@@ -90,7 +90,7 @@ services:
     image: tvsd_web_local_flower
     container_name: tvsd_web_local_flower
     ports:
-      - '5555:5555'
+      - "5555:5555"
     command: /start-flower
 
   vite:
@@ -106,4 +106,4 @@ services:
       - /app/vue_frontend/node_modules
     command: vite dev
     ports:
-      - '5173:5173'
+      - "5173:5173"

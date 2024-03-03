@@ -156,6 +156,10 @@ plugins = ["django_coverage_plugin"]
 [tool.black]
 line-length = 119
 target-version = ['py311']
+extend-exclude = "(migrations)"
+# Exclude these even if they're passed explicitly as a CLI argument.
+# This is necessary for pre-commit to not reformat them.
+force-exclude = "(migrations)"
 
 
 # ==== isort ====

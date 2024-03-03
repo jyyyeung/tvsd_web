@@ -1,5 +1,6 @@
 {
-    "conventionalCommits.scopes": [
-        "poetry"
-    ]
+  "conventionalCommits.scopes": ["poetry"],
+  "djlint.configuration": "./pyproject.toml",
+  "djlint.enableLinting": true,
+  "editor.formatOnSave": true
 }

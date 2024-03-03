@@ -1,6 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import TheWelcome from "./components/TheWelcome.vue";
 import IconVue from "@/components/icons/IconVue.vue";
 </script>
 
@@ -10,8 +10,11 @@ import IconVue from "@/components/icons/IconVue.vue";
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <hr style="height: 1rem;"/>
-      <div>For more Vue integration tips and techniques, check out <b>Vue Demo</b> from the navigation menu above.</div>
+      <hr style="height: 1rem" />
+      <div>
+        For more Vue integration tips and techniques, check out
+        <b>Vue Demo</b> from the navigation menu above.
+      </div>
     </div>
   </header>
 

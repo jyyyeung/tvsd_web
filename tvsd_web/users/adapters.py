@@ -9,6 +9,7 @@ from django.http import HttpRequest
 
 if typing.TYPE_CHECKING:
     from allauth.socialaccount.models import SocialLogin
+
     from tvsd_web.users.models import User
 
 
