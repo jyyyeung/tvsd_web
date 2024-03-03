@@ -1,7 +1,8 @@
 {
   "conventionalCommits.scopes": [
     "poetry",
-    "env"
+    "env",
+    "README.md"
   ],
   "djlint.configuration": "./pyproject.toml",
   "djlint.enableLinting": true,

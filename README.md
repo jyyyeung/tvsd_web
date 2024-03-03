@@ -3,7 +3,12 @@
 TVSD web interface
 
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
-[![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+![GitHub License](https://img.shields.io/github/license/SheepYY039/tvsd_web)
+![GitHub Release](https://img.shields.io/github/v/release/SheepYY039/tvsd_web)
+
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/SheepYY039/tvsd_web/main.svg)](https://results.pre-commit.ci/latest/github/SheepYY039/tvsd_web/main) [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
 
 License: Apache Software License 2.0
 
