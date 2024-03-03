@@ -1,4 +1,7 @@
 ci:
+  autofix_prs: true
+  autofix_commit_msg: "chore(pre-commit.ci): Fixing issues with pre-commit"
+  autoupdate_commit_msg: "chore(pre-commit.ci): pre-commit automatically updated revs."
   autoupdate_schedule: weekly
   skip: []
   submodules: false
