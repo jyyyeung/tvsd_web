@@ -18,23 +18,21 @@ hiredis = "2.2.3" # https://github.com/redis/hiredis-py
 celery = "5.3.5" # pyup: < 6.0  # https://github.com/celery/celery
 django-celery-beat = "2.5.0" # https://github.com/celery/django-celery-beat
 flower = "2.0.1 " # https://github.com/mher/flower
-uvicorn = { version = "0.24.0.post1", extras = [
-  "standard",
-] } # https://github.com/encode/uvicorn
+uvicorn = { version = "0.24.0.post1", extras = ["standard"] } # https://github.com/encode/uvicorn
 
 # Django
 # ------------------------------------------------------------------------------
-django = "4.2.7"              # pyup: < 5.0  # https://www.djangoproject.com/
-django-environ = "0.11.2"     # https://github.com/joke2k/django-environ
-django-model-utils = "4.3.1"  # https://github.com/jazzband/django-model-utils
-django-allauth = "0.58.2"     # https://github.com/pennersr/django-allauth
-django-crispy-forms = "2.1"   # https://github.com/django-crispy-forms/django-crispy-forms
+django = "4.2.7" # pyup: < 5.0  # https://www.djangoproject.com/
+django-environ = "0.11.2" # https://github.com/joke2k/django-environ
+django-model-utils = "4.3.1" # https://github.com/jazzband/django-model-utils
+django-allauth = "0.58.2" # https://github.com/pennersr/django-allauth
+django-crispy-forms = "2.1" # https://github.com/django-crispy-forms/django-crispy-forms
 crispy-bootstrap5 = "2023.10" # https://github.com/django-crispy-forms/crispy-bootstrap5
-django-compressor = "4.4"     # https://github.com/django-compressor/django-compressor
-django-redis = "5.4.0"        # https://github.com/jazzband/django-redis
+django-compressor = "4.4" # https://github.com/django-compressor/django-compressor
+django-redis = "5.4.0" # https://github.com/jazzband/django-redis
 # Django REST Framework
 djangorestframework = "3.14.0" # https://github.com/encode/django-rest-framework
-django-cors-headers = "4.3.1"  # https://github.com/adamchainz/django-cors-headers
+django-cors-headers = "4.3.1" # https://github.com/adamchainz/django-cors-headers
 # DRF-spectacular for api documentation
 drf-spectacular = "0.26.5" # https://github.com/tfranzel/drf-spectacular
 django-vue-utils = "0.1.4" # https://github.com/ilikerobots/django-vue-utilities
@@ -44,20 +42,14 @@ optional = true
 
 [tool.poetry.group.dev.dependencies]
 # was called "local" in the original file
-werkzeug = { version = "3.0.1", extras = [
-  "watchdog",
-] } # https://github.com/pallets/werkzeug
+werkzeug = { version = "3.0.1", extras = ["watchdog"] } # https://github.com/pallets/werkzeug
 ipdb = "0.13.13" # https://github.com/gotcha/ipdb
-psycopg = { version = "3.1.13", extras = [
-  "c",
-] } # https://github.com/psycopg/psycopg
+psycopg = { version = "3.1.13", extras = ["c"] } # https://github.com/psycopg/psycopg
 watchfiles = "0.21.0" # https://github.com/samuelcolvin/watchfiles
 # Testing
 # ------------------------------------------------------------------------------
 mypy = "1.6.1" # https://github.com/python/mypy
-django-stubs = { version = "4.2.6", extras = [
-  "compatible-mypy",
-] } # https://github.com/typeddjango/django-stubs
+django-stubs = { version = "4.2.6", extras = ["compatible-mypy"] } # https://github.com/typeddjango/django-stubs
 pytest = "7.4.3" # https://github.com/pytest-dev/pytest
 pytest-sugar = "0.9.7" # https://github.com/Frozenball/pytest-sugar
 djangorestframework-stubs = { version = "3.14.4", extras = [
@@ -66,47 +58,41 @@ djangorestframework-stubs = { version = "3.14.4", extras = [
 
 # Documentation
 # ------------------------------------------------------------------------------
-sphinx = "7.2.6"               # https://github.com/sphinx-doc/sphinx
+sphinx = "7.2.6" # https://github.com/sphinx-doc/sphinx
 sphinx-autobuild = "2021.3.14" # https://github.com/GaretJax/sphinx-autobuild
 
 # Code quality
 # ------------------------------------------------------------------------------
-flake8 = "6.1.0"        # https://github.com/PyCQA/flake8
-flake8-isort = "6.1.1"  # https://github.com/gforcada/flake8-isort
-coverage = "7.3.2"      # https://github.com/nedbat/coveragepy
-black = "23.11.0"       # https://github.com/psf/black
-djlint = "1.34.0"       # https://github.com/Riverside-Healthcare/djLint
+flake8 = "6.1.0" # https://github.com/PyCQA/flake8
+flake8-isort = "6.1.1" # https://github.com/gforcada/flake8-isort
+coverage = "7.3.2" # https://github.com/nedbat/coveragepy
+black = "23.11.0" # https://github.com/psf/black
+djlint = "1.34.0" # https://github.com/Riverside-Healthcare/djLint
 pylint-django = "2.5.5" # https://github.com/PyCQA/pylint-django
-pylint-celery = "0.3"   # https://github.com/PyCQA/pylint-celery
-pre-commit = "3.5.0"    # https://github.com/pre-commit/pre-commit
+pylint-celery = "0.3" # https://github.com/PyCQA/pylint-celery
+pre-commit = "3.5.0" # https://github.com/pre-commit/pre-commit
 
 # Django
 # ------------------------------------------------------------------------------
 factory-boy = "3.3.0" # https://github.com/FactoryBoy/factory_boy
 
-django-debug-toolbar = "4.2.0"   # https://github.com/jazzband/django-debug-toolbar
-django-extensions = "3.2.3"      # https://github.com/django-extensions/django-extensions
+django-debug-toolbar = "4.2.0" # https://github.com/jazzband/django-debug-toolbar
+django-extensions = "3.2.3" # https://github.com/django-extensions/django-extensions
 django-coverage-plugin = "3.1.0" # https://github.com/nedbat/django_coverage_plugin
-pytest-django = "4.7.0"          # https://github.com/pytest-dev/pytest-django
+pytest-django = "4.7.0" # https://github.com/pytest-dev/pytest-django
 
 [tool.poetry.group.production]
 optional = true
-
 
 [tool.poetry.group.production.dependencies]
 # PRECAUTION: avoid production dependencies that aren't in development
 
 gunicorn = "21.2.0" # https://github.com/benoitc/gunicorn
-psycopg = { version = "3.1.13", extras = [
-  "c",
-] } # https://github.com/psycopg/psycopg
+psycopg = { version = "3.1.13", extras = ["c"] } # https://github.com/psycopg/psycopg
 
 # Django
 # ------------------------------------------------------------------------------
-django-anymail = { version = "10.2", extras = [
-  "mailgun",
-] } # https://github.com/anymail/django-anymail
-
+django-anymail = { version = "10.2", extras = ["mailgun"] } # https://github.com/anymail/django-anymail
 
 [tool.commitizen]
 name = "cz_conventional_commits"
@@ -116,20 +102,13 @@ version_provider = "poetry"
 update_changelog_on_bump = true
 # We recommend setting major_version_zero = true in your configuration file while a project is in its initial development. Remove that configuration using a breaking-change commit to bump your project’s major version to v1.0.0 once your project has reached maturity.
 major_version_zero = true
-version_files = [
-  "tvsd_web/__init__.py:__version__",
-  "vue_frontend/src/package.json:version",
-  "pyproject.toml:version",
-]
+version_files = ["tvsd_web/__init__.py:__version__", "vue_frontend/src/package.json:version", "pyproject.toml:version"]
 changelog_format = "markdown"
 annotated_tag = true
 changelog_incremental = true
 
 [tool.semantic_release]
-version_variable = [
-  "tvsd_web/__init__.py:__version__",
-  "pyproject.toml:version",
-]
+version_variable = ["tvsd_web/__init__.py:__version__", "pyproject.toml:version"]
 branch = "main"
 upload_to_pypi = false
 upload_to_release = true
@@ -151,7 +130,6 @@ include = ["tvsd_web/**"]
 omit = ["*/migrations/*", "*/tests/*"]
 plugins = ["django_coverage_plugin"]
 
-
 # ==== black ====
 [tool.black]
 line-length = 119
@@ -161,7 +139,6 @@ extend-exclude = "(migrations)"
 # This is necessary for pre-commit to not reformat them.
 force-exclude = "(migrations)"
 
-
 # ==== isort ====
 [tool.isort]
 profile = "black"
@@ -169,7 +146,6 @@ line_length = 119
 known_first_party = ["tvsd_web", "config"]
 skip = ["node_modules/", ".venv/"]
 skip_glob = ["**/migrations/*.py"]
-
 
 # ==== mypy ====
 [tool.mypy]
@@ -189,7 +165,6 @@ ignore_errors = true
 [tool.django-stubs]
 django_settings_module = "config.settings.test"
 
-
 # ==== PyLint ====
 [tool.pylint.MASTER]
 load-plugins = ["pylint_django", "pylint_celery"]
@@ -205,14 +180,7 @@ disable = ["missing-docstring", "invalid-name"]
 max-parents = 13
 
 [tool.pylint.TYPECHECK]
-generated-members = [
-  "REQUEST",
-  "acl_users",
-  "aq_parent",
-  "[a-zA-Z]+_set{1,2}",
-  "save",
-  "delete",
-]
+generated-members = ["REQUEST", "acl_users", "aq_parent", "[a-zA-Z]+_set{1,2}", "save", "delete"]
 
 # ==== djLint ====
 [tool.djlint]
@@ -221,7 +189,7 @@ close_void_tags = true
 format_css = true
 format_js = true
 # TODO: remove T002 when fixed https://github.com/Riverside-Healthcare/djLint/issues/687
-ignore = "H006,H030,H031,T002"
+ignore = "H014,H006,H030,H031,T002"
 include = "H017,H035"
 indent = 2
 max_line_length = 119

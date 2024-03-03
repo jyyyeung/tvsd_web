@@ -4,9 +4,9 @@ from django.utils.translation import gettext_lazy as _
 
 class UsersConfig(AppConfig):
     name = "tvsd_web.users"
-    verbose_name = _("Users")
+    verbose_name: str = _("Users")
 
-    def ready(self):
+    def ready(self) -> None:
         try:
             import tvsd_web.users.signals  # noqa: F401
         except ImportError:

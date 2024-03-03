@@ -64,13 +64,12 @@
         "mrmlnc.vscode-duplicate",
         "visualstudioexptteam.vscodeintellicode",
         "visualstudioexptteam.intellicode-api-usage-examples",
-        // python
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-python.isort",
         "ms-python.black-formatter",
-        // django
-        "batisteo.vscode-django"
+        "batisteo.vscode-django",
+        "tamasfe.even-better-toml"
       ]
     }
   },

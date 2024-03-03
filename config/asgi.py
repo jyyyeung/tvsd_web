@@ -32,7 +32,7 @@ django_application = get_asgi_application()
 from config.websocket import websocket_application  # noqa isort:skip
 
 
-async def application(scope, receive, send):
+async def application(scope, receive, send) -> None:
     if scope["type"] == "http":
         await django_application(scope, receive, send)
     elif scope["type"] == "websocket":

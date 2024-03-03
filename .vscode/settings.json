@@ -1,10 +1,8 @@
 {
-  "conventionalCommits.scopes": [
-    "poetry",
-    "env",
-    "README.md"
-  ],
-  "djlint.configuration": "./pyproject.toml",
+  "conventionalCommits.scopes": ["poetry", "env", "README.md"],
   "djlint.enableLinting": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "evenBetterToml.formatter.columnWidth": 119,
+  "evenBetterToml.formatter.allowedBlankLines": 1,
+  "evenBetterToml.formatter.alignComments": false
 }

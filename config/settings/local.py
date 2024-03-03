@@ -11,7 +11,7 @@ SECRET_KEY = env(
     default="fIIvrVkwhoWsxlxcyMLLHF0oo16z3xbxCfPdn8gH93SYcdN4N0knWrfocQnrSC8K",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS: list[str] = ["localhost", "127.0.0.1"]
 
 # CACHES
 # ------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ EMAIL_PORT = 1025
 # WhiteNoise
 # ------------------------------------------------------------------------------
 # http://whitenoise.evans.io/en/latest/django.html#using-whitenoise-in-development
-INSTALLED_APPS = ["whitenoise.runserver_nostatic"] + INSTALLED_APPS  # noqa: F405
+INSTALLED_APPS: list[str] = ["whitenoise.runserver_nostatic"] + INSTALLED_APPS  # noqa: F405
 
 
 # django-debug-toolbar
@@ -48,7 +48,7 @@ DEBUG_TOOLBAR_CONFIG = {
     "SHOW_TEMPLATE_CONTEXT": True,
 }
 # https://django-debug-toolbar.readthedocs.io/en/latest/installation.html#internal-ips
-INTERNAL_IPS = ["127.0.0.1", "10.0.2.2"]
+INTERNAL_IPS: list[str] = ["127.0.0.1", "10.0.2.2"]
 if env("USE_DOCKER") == "yes":
     import socket
 

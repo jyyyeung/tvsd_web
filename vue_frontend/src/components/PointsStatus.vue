@@ -59,71 +59,46 @@ watch(
     <div class="row justify-content-center">
       <div class="col text-center mt-5">
         <!-- An example of using vue to directly submit a form to a Django view -->
-        <form
-          @submit="beforeSubmit"
-          method="post"
-          :action="claimUrl"
-          v-show="!rewardStore.submitInProgress"
-        >
+        <form @submit="beforeSubmit" method="post" :action="claimUrl" v-show="!rewardStore.submitInProgress">
           <input type="hidden" name="csrfmiddlewaretoken" :value="csrfToken" />
           <template v-for="rewardId in currentSelection">
             <input type="hidden" name="rewardId" :value="rewardId" />
           </template>
-          <button
-            class="btn btn-success btn-lg"
-            :disabled="rewardStore.pointsRedeemed <= 0 || remainingPoints < 0"
-          >
+          <button class="btn btn-success btn-lg" :disabled="rewardStore.pointsRedeemed <= 0 || remainingPoints < 0">
             Claim my rewards
           </button>
         </form>
 
-        <div
-          v-show="rewardStore.submitInProgress"
-          style="height: 42px"
-          class="text-center"
-        >
+        <div v-show="rewardStore.submitInProgress" style="height: 42px" class="text-center">
           <span class="spinner-grow" role="status"></span>
         </div>
       </div>
     </div>
   </div>
-  <div
-    v-show="rewardStore.submitInProgress"
-    style="height: 120px"
-    class="text-center"
-  >
+  <div v-show="rewardStore.submitInProgress" style="height: 120px" class="text-center">
     <span class="spinner-grow m-5" role="status"></span>
   </div>
   <Teleport to="footer">
     <div class="container" v-html="$djangoSlots.disclaimer"></div>
   </Teleport>
   <Teleport to="#alerts">
-    <div
-      class="alert mb-0"
-      role="alert"
-      :class="{
-        'alert-danger': remainingPoints < 4,
-        'alert-light': remainingPoints >= 4,
-      }"
-    >
+    <div class="alert mb-0" role="alert" :class="{
+    'alert-danger': remainingPoints < 4,
+    'alert-light': remainingPoints >= 4,
+  }">
       <b>Need more points?</b>
       Earn bonus points:
       <a href="#" class="link-dark" @click="rewardStore.addPoints(5)">+5</a>
-      &nbsp;<a href="#" class="link-dark" @click="rewardStore.addPoints(15)"
-        >+15</a
-      >
+      &nbsp;<a href="#" class="link-dark" @click="rewardStore.addPoints(15)">+15</a>
       <span v-if="remainingPoints > 0" class="float-end">
         <b>Had Enough?</b>
-        &nbsp;<a
-          href="#"
-          class="link-dark x-float-end"
-          @click="rewardStore.addPoints(-1 * remainingPoints)"
-          >forfeit all points</a
-        >
+        &nbsp;<a href="#" class="link-dark x-float-end" @click="rewardStore.addPoints(-1 * remainingPoints)">forfeit all
+          points</a>
       </span>
     </div>
   </Teleport>
 </template>
+
 <style scoped>
 /* Scoped styles will apply only to this component */
 button[disabled] {

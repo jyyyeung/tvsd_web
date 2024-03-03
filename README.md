@@ -9,9 +9,6 @@ TVSD web interface
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/SheepYY039/tvsd_web/main.svg)](https://results.pre-commit.ci/latest/github/SheepYY039/tvsd_web/main) [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-
-License: Apache Software License 2.0
-
 ## Settings
 
 Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings.html).
