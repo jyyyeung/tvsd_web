@@ -25,6 +25,16 @@ The Vite dev server will automatically run in docker when started with the local
 docker-compose -f local.yml up
 ```
 
+By default the application serves on the following ports
+| Service    | Port                  |
+| ---------- | --------------------- |
+| Docs       | http://localhost:9000 |
+| Django Web | http://localhost:8000 |
+| Local vite | http://localhost:5173 |
+| Celery     | http://localhost:5555 |
+| Postgres   | 5432                  |
+| Redis      | 6379                  |
+
 #### From the console
 
 Alternatively you, may run the Vite dev server directly from the project directory:
@@ -42,8 +52,9 @@ For more information, refer to the [Vue3 Vite Django Cookiecutter project](https
 - To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
 
 - To create a **superuser account**, use this command:
-
-      $ python manage.py createsuperuser
+  ```bash
+  python manage.py createsuperuser
+  ```
 
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
@@ -51,7 +62,9 @@ For convenience, you can keep your normal user logged in on Chrome and your supe
 
 Running type checks with mypy:
 
-    $ mypy tvsd_web
+```bash
+mypy tvsd_web
+```
 
 ### Test coverage
 
