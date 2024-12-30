@@ -6,7 +6,7 @@ ci:
   skip: []
   submodules: false
 default_stages:
-  - commit
+  - pre-commit
 exclude: ^docs/|/migrations/
 repos:
   - hooks:
@@ -21,7 +21,7 @@ repos:
       - id: check-docstring-first
       - id: detect-private-key
     repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v5.0.0
   - repo: https://gitlab.com/bmares/check-json5
     rev: v1.0.0
     hooks:
@@ -32,17 +32,17 @@ repos:
           - "4.2"
         id: django-upgrade
     repo: https://github.com/adamchainz/django-upgrade
-    rev: 1.16.0
+    rev: 1.22.2
   - hooks:
       - args:
           - --py311-plus
         id: pyupgrade
     repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.1
+    rev: v3.19.1
   - hooks:
       - id: black
     repo: https://github.com/psf/black
-    rev: 24.2.0
+    rev: 24.10.0
   - hooks:
       - id: isort
     repo: https://github.com/PyCQA/isort
@@ -50,16 +50,16 @@ repos:
   - hooks:
       - id: flake8
     repo: https://github.com/PyCQA/flake8
-    rev: 7.0.0
+    rev: 7.1.1
   - hooks:
       - id: djlint-reformat-django
       - id: djlint-django
     repo: https://github.com/Riverside-Healthcare/djLint
-    rev: v1.34.1
+    rev: v1.36.4
   - hooks:
       - id: commitizen
       - id: commitizen-branch
         stages:
-          - push
+          - pre-push
     repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.16.0
+    rev: v4.1.0
