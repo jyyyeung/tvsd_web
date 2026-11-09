@@ -9,9 +9,9 @@
   <!-- Show redeemed and unredeemed points -->
   <div class="mt-4">
     <div id="points-status"
-      {# pass root properties via the dataset #}
-      data-points-available="{{ redeemable_points }}"
-      data-claim-url="{% url 'rewards:claim' %}">
+         {# pass root properties via the dataset #}
+         data-points-available="{{ redeemable_points }}"
+         data-claim-url="{% url 'rewards:claim' %}">
       {# 'djangoSlots' can be addressed by name and used as content in Vue components #}
       <h4 class="text-center mb-5" data-django-slot="message">You've earned DjangoCon rewards!</h4>
       {# They can include template logic and may be teleported anywhere on the page #}
